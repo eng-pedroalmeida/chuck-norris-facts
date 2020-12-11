@@ -122,6 +122,9 @@
 		DDA1629F258009F800AC523F /* ChuckNorrisFacts */ = {
 			isa = PBXGroup;
 			children = (
+				DDB139302583AAA800552595 /* Facts */,
+				DDA162D225810C2000AC523F /* Repository */,
+				DDB139312583AAB200552595 /* Search */,
 				DDA162A0258009F800AC523F /* ChuckNorrisFactsApp.swift */,
 				DDA162A2258009F800AC523F /* ContentView.swift */,
 				DDA162A4258009F900AC523F /* Assets.xcassets */,
@@ -155,6 +158,27 @@
 				DDA162BF258009F900AC523F /* Info.plist */,
 			);
 			path = ChuckNorrisFactsUITests;
+			sourceTree = "<group>";
+		};
+		DDA162D225810C2000AC523F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DDB139302583AAA800552595 /* Facts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Facts;
+			sourceTree = "<group>";
+		};
+		DDB139312583AAB200552595 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		F7F5B38110D5188D2E8D79D4 /* Pods */ = {
