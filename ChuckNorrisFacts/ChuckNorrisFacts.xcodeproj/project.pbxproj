@@ -10,6 +10,14 @@
 		0349F85240B8417A6488DE6D /* Pods_ChuckNorrisFacts_ChuckNorrisFactsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C77C9D78F57A0784E3D3BD2 /* Pods_ChuckNorrisFacts_ChuckNorrisFactsUITests.framework */; };
 		3CD4358E4EB0D3C0002EEE22 /* Pods_ChuckNorrisFactsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20110000BE1D3AD633B64468 /* Pods_ChuckNorrisFactsTests.framework */; };
 		8A3BE64E753C62FA6A4E36AE /* Pods_ChuckNorrisFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725E03844912F5C5728B259D /* Pods_ChuckNorrisFacts.framework */; };
+		DD0DFDFB2583E94000877615 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0DFDFA2583E94000877615 /* API.swift */; };
+		DD0DFE0B2583EC1200877615 /* APIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0DFE0A2583EC1200877615 /* APIParameters.swift */; };
+		DD0DFE10258402F900877615 /* FactsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0DFE0F258402F900877615 /* FactsRepository.swift */; };
+		DD0DFE152584036D00877615 /* FactsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0DFE142584036D00877615 /* FactsAPI.swift */; };
+		DD0DFE1B258407E600877615 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0DFE1A258407E600877615 /* Fact.swift */; };
+		DD258BA22587B25E000B3971 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258BA12587B25E000B3971 /* RemoteRepository.swift */; };
+		DD258BA72587D44B000B3971 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258BA62587D44B000B3971 /* Outcome.swift */; };
+		DD258BB42587E8F2000B3971 /* FactSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258BB32587E8F2000B3971 /* FactSearchResponse.swift */; };
 		DDA162A1258009F800AC523F /* ChuckNorrisFactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA162A0258009F800AC523F /* ChuckNorrisFactsApp.swift */; };
 		DDA162A3258009F800AC523F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA162A2258009F800AC523F /* ContentView.swift */; };
 		DDA162A5258009F900AC523F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA162A4258009F900AC523F /* Assets.xcassets */; };
@@ -43,6 +51,14 @@
 		68660F64FEF5E1A646DD72FA /* Pods-ChuckNorrisFacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisFacts.release.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisFacts/Pods-ChuckNorrisFacts.release.xcconfig"; sourceTree = "<group>"; };
 		725E03844912F5C5728B259D /* Pods_ChuckNorrisFacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorrisFacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		742F6198837E9AF944F74281 /* Pods-ChuckNorrisFacts-ChuckNorrisFactsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisFacts-ChuckNorrisFactsUITests.release.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisFacts-ChuckNorrisFactsUITests/Pods-ChuckNorrisFacts-ChuckNorrisFactsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DD0DFDFA2583E94000877615 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DD0DFE0A2583EC1200877615 /* APIParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParameters.swift; sourceTree = "<group>"; };
+		DD0DFE0F258402F900877615 /* FactsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsRepository.swift; sourceTree = "<group>"; };
+		DD0DFE142584036D00877615 /* FactsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsAPI.swift; sourceTree = "<group>"; };
+		DD0DFE1A258407E600877615 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		DD258BA12587B25E000B3971 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
+		DD258BA62587D44B000B3971 /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
+		DD258BB32587E8F2000B3971 /* FactSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactSearchResponse.swift; sourceTree = "<group>"; };
 		DDA1629D258009F800AC523F /* ChuckNorrisFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA162A0258009F800AC523F /* ChuckNorrisFactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsApp.swift; sourceTree = "<group>"; };
 		DDA162A2258009F800AC523F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +113,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD0DFE19258407D400877615 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD0DFE1A258407E600877615 /* Fact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD258BB82587F09D000B3971 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD258BA62587D44B000B3971 /* Outcome.swift */,
+				DD258BB32587E8F2000B3971 /* FactSearchResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD258BB92587F0AB000B3971 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DD0DFDFA2583E94000877615 /* API.swift */,
+				DD0DFE0A2583EC1200877615 /* APIParameters.swift */,
+				DD258BA12587B25E000B3971 /* RemoteRepository.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		DDA16294258009F800AC523F = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				DDB139302583AAA800552595 /* Facts */,
+				DD0DFE19258407D400877615 /* Model */,
 				DDA162D225810C2000AC523F /* Repository */,
 				DDB139312583AAB200552595 /* Search */,
 				DDA162A0258009F800AC523F /* ChuckNorrisFactsApp.swift */,
@@ -163,6 +207,10 @@
 		DDA162D225810C2000AC523F /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				DD0DFE142584036D00877615 /* FactsAPI.swift */,
+				DD0DFE0F258402F900877615 /* FactsRepository.swift */,
+				DD258BB92587F0AB000B3971 /* Configuration */,
+				DD258BB82587F09D000B3971 /* Model */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -431,7 +479,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD258BB42587E8F2000B3971 /* FactSearchResponse.swift in Sources */,
+				DD0DFE152584036D00877615 /* FactsAPI.swift in Sources */,
+				DD0DFE0B2583EC1200877615 /* APIParameters.swift in Sources */,
+				DD258BA72587D44B000B3971 /* Outcome.swift in Sources */,
 				DDA162A3258009F800AC523F /* ContentView.swift in Sources */,
+				DD0DFE10258402F900877615 /* FactsRepository.swift in Sources */,
+				DD0DFE1B258407E600877615 /* Fact.swift in Sources */,
+				DD258BA22587B25E000B3971 /* RemoteRepository.swift in Sources */,
+				DD0DFDFB2583E94000877615 /* API.swift in Sources */,
 				DDA162A1258009F800AC523F /* ChuckNorrisFactsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,7 +732,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55AD3E26D81694EB71F7D948 /* Pods-ChuckNorrisFacts-ChuckNorrisFactsUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChuckNorrisFactsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -696,7 +752,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 742F6198837E9AF944F74281 /* Pods-ChuckNorrisFacts-ChuckNorrisFactsUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChuckNorrisFactsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
