@@ -18,6 +18,11 @@
 		DD258BA22587B25E000B3971 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258BA12587B25E000B3971 /* RemoteRepository.swift */; };
 		DD258BA72587D44B000B3971 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258BA62587D44B000B3971 /* Outcome.swift */; };
 		DD258BB42587E8F2000B3971 /* FactSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD258BB32587E8F2000B3971 /* FactSearchResponse.swift */; };
+		DD4053A025894DA3009C4DDE /* ChuckNorrisFacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD40539E25894DA3009C4DDE /* ChuckNorrisFacts.xcdatamodeld */; };
+		DD4053A625894E21009C4DDE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053A525894E21009C4DDE /* DatabaseManager.swift */; };
+		DD4053AE25895A12009C4DDE /* SearchTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053AD25895A12009C4DDE /* SearchTerm.swift */; };
+		DD4053B325895BC9009C4DDE /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053B225895BC9009C4DDE /* CategoryRepository.swift */; };
+		DD4053B825895D1D009C4DDE /* SearchTermRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053B725895D1D009C4DDE /* SearchTermRepository.swift */; };
 		DDA162A1258009F800AC523F /* ChuckNorrisFactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA162A0258009F800AC523F /* ChuckNorrisFactsApp.swift */; };
 		DDA162A3258009F800AC523F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA162A2258009F800AC523F /* ContentView.swift */; };
 		DDA162A5258009F900AC523F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA162A4258009F900AC523F /* Assets.xcassets */; };
@@ -59,6 +64,11 @@
 		DD258BA12587B25E000B3971 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
 		DD258BA62587D44B000B3971 /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
 		DD258BB32587E8F2000B3971 /* FactSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactSearchResponse.swift; sourceTree = "<group>"; };
+		DD40539F25894DA3009C4DDE /* ChuckNorrisFacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChuckNorrisFacts.xcdatamodel; sourceTree = "<group>"; };
+		DD4053A525894E21009C4DDE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		DD4053AD25895A12009C4DDE /* SearchTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTerm.swift; sourceTree = "<group>"; };
+		DD4053B225895BC9009C4DDE /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		DD4053B725895D1D009C4DDE /* SearchTermRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermRepository.swift; sourceTree = "<group>"; };
 		DDA1629D258009F800AC523F /* ChuckNorrisFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA162A0258009F800AC523F /* ChuckNorrisFactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsApp.swift; sourceTree = "<group>"; };
 		DDA162A2258009F800AC523F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				DD0DFE1A258407E600877615 /* Fact.swift */,
+				DD4053AD25895A12009C4DDE /* SearchTerm.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +149,14 @@
 				DD258BA12587B25E000B3971 /* RemoteRepository.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DD4053A425894DE9009C4DDE /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DD4053A525894E21009C4DDE /* DatabaseManager.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		DDA16294258009F800AC523F = {
@@ -174,6 +193,7 @@
 				DDA162A4258009F900AC523F /* Assets.xcassets */,
 				DDA162A9258009F900AC523F /* Info.plist */,
 				DDA162A6258009F900AC523F /* Preview Content */,
+				DD40539E25894DA3009C4DDE /* ChuckNorrisFacts.xcdatamodeld */,
 			);
 			path = ChuckNorrisFacts;
 			sourceTree = "<group>";
@@ -207,8 +227,11 @@
 		DDA162D225810C2000AC523F /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				DD4053A425894DE9009C4DDE /* Database */,
 				DD0DFE142584036D00877615 /* FactsAPI.swift */,
+				DD4053B225895BC9009C4DDE /* CategoryRepository.swift */,
 				DD0DFE0F258402F900877615 /* FactsRepository.swift */,
+				DD4053B725895D1D009C4DDE /* SearchTermRepository.swift */,
 				DD258BB92587F0AB000B3971 /* Configuration */,
 				DD258BB82587F09D000B3971 /* Model */,
 			);
@@ -487,8 +510,13 @@
 				DD0DFE10258402F900877615 /* FactsRepository.swift in Sources */,
 				DD0DFE1B258407E600877615 /* Fact.swift in Sources */,
 				DD258BA22587B25E000B3971 /* RemoteRepository.swift in Sources */,
+				DD4053A625894E21009C4DDE /* DatabaseManager.swift in Sources */,
 				DD0DFDFB2583E94000877615 /* API.swift in Sources */,
+				DD4053B825895D1D009C4DDE /* SearchTermRepository.swift in Sources */,
 				DDA162A1258009F800AC523F /* ChuckNorrisFactsApp.swift in Sources */,
+				DD4053B325895BC9009C4DDE /* CategoryRepository.swift in Sources */,
+				DD4053A025894DA3009C4DDE /* ChuckNorrisFacts.xcdatamodeld in Sources */,
+				DD4053AE25895A12009C4DDE /* SearchTerm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +836,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD40539E25894DA3009C4DDE /* ChuckNorrisFacts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD40539F25894DA3009C4DDE /* ChuckNorrisFacts.xcdatamodel */,
+			);
+			currentVersion = DD40539F25894DA3009C4DDE /* ChuckNorrisFacts.xcdatamodel */;
+			path = ChuckNorrisFacts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DDA16295258009F800AC523F /* Project object */;
 }
