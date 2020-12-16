@@ -15,13 +15,7 @@ class FactsRepository: RemoteRepository {
         return request(FactsAPI.getFacts(category: category))
     }
     
-    func getCategories() -> Single<[String]> {
-        return request(FactsAPI.getCategories)
-    }
-    
     func search(by query: String) -> Single<[Fact]> {
         return (request(FactsAPI.search(query: query)) as Single<FactSearchResponse>).map { $0.result }
     }
-    
-    
 }
