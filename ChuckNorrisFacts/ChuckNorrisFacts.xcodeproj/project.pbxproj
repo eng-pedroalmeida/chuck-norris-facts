@@ -23,6 +23,9 @@
 		DD4053AE25895A12009C4DDE /* SearchTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053AD25895A12009C4DDE /* SearchTerm.swift */; };
 		DD4053B325895BC9009C4DDE /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053B225895BC9009C4DDE /* CategoryRepository.swift */; };
 		DD4053B825895D1D009C4DDE /* SearchTermRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053B725895D1D009C4DDE /* SearchTermRepository.swift */; };
+		DD4053C3258A221C009C4DDE /* FactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053C2258A221C009C4DDE /* FactsScreen.swift */; };
+		DD4053D0258A2818009C4DDE /* FactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053CF258A2818009C4DDE /* FactRow.swift */; };
+		DD4053D5258A4466009C4DDE /* FactRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4053D4258A4466009C4DDE /* FactRowModel.swift */; };
 		DDA162A1258009F800AC523F /* ChuckNorrisFactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA162A0258009F800AC523F /* ChuckNorrisFactsApp.swift */; };
 		DDA162A3258009F800AC523F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA162A2258009F800AC523F /* ContentView.swift */; };
 		DDA162A5258009F900AC523F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA162A4258009F900AC523F /* Assets.xcassets */; };
@@ -69,6 +72,9 @@
 		DD4053AD25895A12009C4DDE /* SearchTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTerm.swift; sourceTree = "<group>"; };
 		DD4053B225895BC9009C4DDE /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
 		DD4053B725895D1D009C4DDE /* SearchTermRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermRepository.swift; sourceTree = "<group>"; };
+		DD4053C2258A221C009C4DDE /* FactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsScreen.swift; sourceTree = "<group>"; };
+		DD4053CF258A2818009C4DDE /* FactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactRow.swift; sourceTree = "<group>"; };
+		DD4053D4258A4466009C4DDE /* FactRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactRowModel.swift; sourceTree = "<group>"; };
 		DDA1629D258009F800AC523F /* ChuckNorrisFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA162A0258009F800AC523F /* ChuckNorrisFactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsApp.swift; sourceTree = "<group>"; };
 		DDA162A2258009F800AC523F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -241,6 +247,9 @@
 		DDB139302583AAA800552595 /* Facts */ = {
 			isa = PBXGroup;
 			children = (
+				DD4053C2258A221C009C4DDE /* FactsScreen.swift */,
+				DD4053CF258A2818009C4DDE /* FactRow.swift */,
+				DD4053D4258A4466009C4DDE /* FactRowModel.swift */,
 			);
 			path = Facts;
 			sourceTree = "<group>";
@@ -511,11 +520,14 @@
 				DD0DFE1B258407E600877615 /* Fact.swift in Sources */,
 				DD258BA22587B25E000B3971 /* RemoteRepository.swift in Sources */,
 				DD4053A625894E21009C4DDE /* DatabaseManager.swift in Sources */,
+				DD4053D0258A2818009C4DDE /* FactRow.swift in Sources */,
 				DD0DFDFB2583E94000877615 /* API.swift in Sources */,
 				DD4053B825895D1D009C4DDE /* SearchTermRepository.swift in Sources */,
 				DDA162A1258009F800AC523F /* ChuckNorrisFactsApp.swift in Sources */,
 				DD4053B325895BC9009C4DDE /* CategoryRepository.swift in Sources */,
+				DD4053C3258A221C009C4DDE /* FactsScreen.swift in Sources */,
 				DD4053A025894DA3009C4DDE /* ChuckNorrisFacts.xcdatamodeld in Sources */,
+				DD4053D5258A4466009C4DDE /* FactRowModel.swift in Sources */,
 				DD4053AE25895A12009C4DDE /* SearchTerm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

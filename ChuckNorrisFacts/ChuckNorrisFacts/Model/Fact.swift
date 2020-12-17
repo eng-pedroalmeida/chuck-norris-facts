@@ -7,11 +7,10 @@
 
 import Foundation
 
-struct Fact: Codable {
+struct Fact: Codable, Identifiable {
     let id: String
     let value: String
     let categories: [String]
-    let iconURL: String
 }
 
 extension Fact {
@@ -19,6 +18,5 @@ extension Fact {
         case id
         case value
         case categories
-        case iconURL = "icon_url"
     }
 }
