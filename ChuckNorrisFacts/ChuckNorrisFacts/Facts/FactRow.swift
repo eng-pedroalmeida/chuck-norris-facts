@@ -17,14 +17,7 @@ struct FactRow: View {
                 .font(model.style == .title ? .title : .body)
                 .fontWeight(.bold)
             HStack {
-                HStack {
-                    Text(model.category.uppercased())
-                        .fontWeight(.bold)
-                        .font(.subheadline)
-                }
-                .padding(4)
-                .foregroundColor(.white)
-                .background(Color.blue)
+                CategoryView(name: model.category)
                 Spacer()
                 shareButton
             }
