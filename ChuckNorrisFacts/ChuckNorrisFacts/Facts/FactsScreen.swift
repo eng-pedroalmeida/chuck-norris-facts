@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FactsScreen: View {
+    @State private var showSearchModal = false
+    
     var facts: [Fact] = [Fact(id: "0", value: "The Chuck Norris integration existed even before Slack existed", categories: ["Tecnology"]),
                          Fact(id: "1", value: "Chuck Norris, Jesus, and Barack Obama were standing by a lake. Jesus walked out on the water and was shortly followed by Chuck. Obama tried to follow, but fell in the water. After muck kicking and splashing Jesus said: Do you think we should tell him about the \"stepping stones\"? Chuck then said: \"What stepping stone?\"", categories: [])]
     
@@ -21,15 +23,11 @@ struct FactsScreen: View {
                 }
             }
             .navigationBarTitle("Chuck Norris Facts")
-            .navigationBarItems(trailing: Button(action: {
-                    print("Help tapped!")
-                }) {
-                    Image(systemName: "magnifyingglass").imageScale(.large)
-                })
+            .navigationBarItems(trailing: searchButton)
+            .sheet(isPresented: $showSearchModal, content: {
+                SearchScreen()
+            })
         }
-        .onAppear(perform: {
-            UITableView.appearance().separatorStyle = .none
-        })
     }
     
     var list: some View {
@@ -47,8 +45,14 @@ struct FactsScreen: View {
         }
     }
     
-    var emptyView: Text {
+    var emptyView: some View {
         Text("No Facts found. Click on search button and found some facts about Chuck Norris.")
+    }
+    
+    var searchButton: some View {
+        Button(action: { showSearchModal = true }) {
+            Image(systemName: "magnifyingglass").imageScale(.large)
+        }
     }
 }
 
