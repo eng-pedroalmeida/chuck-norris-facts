@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PastSearchItemView: View {
     var text: String
-    var onClick: (() -> Void)
+    var onTapped: (() -> Void)
     
     @State private var scale: CGFloat = 1.0
     
@@ -25,7 +25,7 @@ struct PastSearchItemView: View {
                 .onChanged { _ in scale -= 0.05 }
                 .onEnded { _ in
                     scale = 1.0
-                    onClick()
+                    onTapped()
                 }
         )
     }
@@ -33,6 +33,6 @@ struct PastSearchItemView: View {
 
 struct PastSearchItemView_Previews: PreviewProvider {
     static var previews: some View {
-        PastSearchItemView(text: "Search item", onClick: {})
+        PastSearchItemView(text: "Search item", onTapped: {})
     }
 }

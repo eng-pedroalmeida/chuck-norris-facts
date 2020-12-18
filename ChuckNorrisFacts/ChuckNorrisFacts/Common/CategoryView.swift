@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryView: View {
     var name: String
-    var onClick: (() -> Void)?
+    var onTapped: (() -> Void)?
     
     @State private var scale: CGFloat = 1.0
     
@@ -27,7 +27,7 @@ struct CategoryView: View {
         .foregroundColor(.white)
         .background(Color.blue)
         
-        if let onClick = onClick {
+        if let onTapped = onTapped {
             return AnyView(
                 view.scaleEffect(scale)
                     .gesture(
@@ -35,7 +35,7 @@ struct CategoryView: View {
                         .onChanged { _ in scale -= 0.05 }
                         .onEnded { _ in
                             scale = 1.0
-                            onClick()
+                            onTapped()
                         }
                 )
             )
